@@ -1,204 +1,108 @@
-* {
+*{
+  font-family: "Rimouski";
+}
+
+body{
+  background-color: #293251;
+}
+
+.container{
+  width: 300px;    
+  background-color: #FFF;
+  
+  display: block;
+  margin: 0 auto;
+  
+  border-radius: 10px;
+  padding-bottom : 50px;
+}
+
+.app-title{
+  width: 300px;
+  height: 50px;
+  border-radius: 10px 10px 0 0;
+}
+
+.app-title p{
+  text-align: center;
+  padding: 15px;
+  margin: 0 auto;
+  font-size: 1.2em;
+  color: #293251;
+}
+
+.notification{
+  background-color: #f8d7da;
+  display: none;
+}
+
+.notification p{
+  color: #721c24;
+  font-size: 1.2em;
+  margin: 0;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.weather-container{
+  width: 300px;
+  height: 260px;
+  background-color: #F4F9FF;
+}
+
+.weather-icon{
+  width: 300px;
+  height: 128px;
+}
+
+.weather-icon img{
+  display: block;
+  margin: 0 auto;
+}
+
+.temperature-value{
+  width: 300px;
+  height:60px;
+}
+
+.temperature-value p{
   padding: 0;
   margin: 0;
-}
-
-body {
-  font-family: 'Montserrat', sans-serif;
-}
-
-.container-fluid.section-one {
-  padding: 50px;
-  height: 35vh;
-}
-
-.container-fluid.section-two {
-  height: 65vh;
-}
-
-h1 {
+  color: #293251;
+  font-size: 4em;
   text-align: center;
-  font-weight: 700;
-  font-size: 4rem;
+  cursor: pointer;
 }
 
-.row {
-  margin-top: 20px;
+.temperature-value p:hover{
+  
 }
 
-.col {
-  text-align: center;
+.temperature-value span{
+  color: #293251;
+  font-size: 0.5em;
 }
 
-.btn {
-  margin-top: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
-  text-transform: uppercase;
-  font-weight: 600;
-  border-radius: 15px;
+.temperature-description{
+  
 }
 
-.form-group {
-  margin-top: 20px;
-}
-
-#city-input {
-  width: 60%;
-  margin: auto;
-}
-
-.choice-text {
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-.city-name {
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-#myVideo {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+.temperature-description p{
+  padding: 8px;
   margin: 0;
-  min-height: 100vh;
-  z-index: -1;
-  min-width: 100%;
-}
-
-.container-fluid.section-two {
-  z-index: 1;
-}
-
-.container-fluid {
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 1;
-  color: white;
+  color: #293251;
   text-align: center;
+  font-size: 1.2em;
 }
 
-#city {
-  margin-bottom: 5px;
+.location{
+  
 }
 
-
-@media only screen and (min-width: 331px) {
-  @media only screen and (max-width: 650px) {
-      .container-fluid {
-          background: rgba(0, 0, 0, 0.4);
-          z-index: 1;
-          color: white;
-          width: 100%;
-      }
-      .col {
-          margin-top: 10px;
-      }
-      #city {
-          margin-top: 5px;
-          margin-bottom: -10px;
-      }
-
-      #city-input {
-          margin-bottom: -10px;
-      }
-      .choice-text {
-          font-size: 0.9rem !important;
-          margin: -3px;
-      }
-      .city-name {
-          font-size: 0.9rem !important;
-      }
-
-      #myVideo {
-          position: absolute;
-          min-height: 100vh;
-          z-index: -1;
-          min-width: 100%;
-      }
-      h1 {
-          font-size: 1.5rem;
-          margin-top: -40px;
-      }
-      .form-group {
-          margin-top: 10px;
-      }
-      #two {
-          margin-top: 20px;
-      }
-      #wheater-info {
-          font-size: 0.9rem;
-      }
-      .table td,
-      .table th {
-          padding: .15rem;
-      }
-  }
-}
-
-@media only screen and (max-width: 330px) {
-  .container-fluid {
-      background: rgba(0, 0, 0, 0.4);
-      z-index: 1;
-      color: white;
-      width: 100%;
-  }
-  .col {
-      margin-top: 2px;
-  }
-  #city {
-      margin-top: 5px;
-      margin-bottom: -20px;
-  }
-
-  #city-input {
-      margin-bottom: -10px;
-  }
-  .choice-text {
-      font-size: 0.7rem !important;
-      margin: -3px;
-  }
-  .city-name {
-      font-size: 0.7rem !important;
-  }
-
-  #myVideo {
-      position: absolute;
-      min-height: 100vh;
-      z-index: -1;
-      min-width: 100%;
-  }
-  h1 {
-      margin-top: -40px;
-      font-size: 1.2rem;
-  }
-  .form-group {
-      margin-top: 10px;
-  }
-  #two {
-      margin-top: 20px;
-  }
-  #wheater-info {
-      font-size: 0.7rem;
-  }
-  .table td,
-  .table th {
-      padding: .15rem;
-  }
-  .btn {
-      font-size: 0.9rem;
-  }
-}
-
-
-
-#wheater-info {
-  position: absolute;
-  bottom: 0;
-  left: 15%;
-  right: 15%;
-  width: 70%;
-  font-weight: 600;
-  display: none;
+.location p{
+  margin: 0;
+  padding: 0;
+  color: #293251;
+  text-align: center;
+  font-size: 0.8em;
 }
